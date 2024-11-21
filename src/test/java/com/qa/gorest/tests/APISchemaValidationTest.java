@@ -26,6 +26,8 @@ public class APISchemaValidationTest extends BaseTest {
 							.then().log().all()
 								.assertThat().statusCode(APIHttpStatus.CREATED_201.getCode())
 									.body(matchesJsonSchemaInClasspath("createuserschema.json"));
+				 
+				 
 		
 	}
 	
