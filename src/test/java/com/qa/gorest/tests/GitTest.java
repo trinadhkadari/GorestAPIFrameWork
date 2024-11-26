@@ -4,17 +4,27 @@ public class GitTest {
 
   int a, b;
 
-  private void sum(int a, int b){
+  private int sum(int a, int b){
+	  
+	int sum=a+b;  
+  
+	return sum;
 
-    System.out.println(a+b);
-     }
+  }
 
   public static void main(String args[]){
 
 
-    GitTest gt = new GitTest();
+	  GitTest gt = new GitTest();
+	  
+	  int sum=gt.sum(10,20);
 
-    gt.sum(10,20);
+	  System.out.println("Sum:"+sum);
+	  
+	  
+
+	  
+    
 
     
 
